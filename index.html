@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashwel Rudolf Fernandes - Resume</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: var(--white);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* Header Section */
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 40px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-img-placeholder {
+            width: 120px;
+            height: 120px;
+            background-color: #ecf0f1;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            font-weight: bold;
+            border: 4px solid var(--secondary-color);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .contact-info {
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+
+        .contact-info a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Content Layout */
+        .main-content {
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+
+        /* Objective */
+        .objective p {
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+
+        /* Education & Experience Items */
+        .entry {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 3px solid var(--secondary-color);
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+
+        .entry-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .entry-date {
+            color: #666;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        .entry-subtitle {
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category h3 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+        }
+
+        .tags span {
+            display: inline-block;
+            background: #eef2f3;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            border: 1px solid #ddd;
+        }
+
+        /* Lists */
+        ul {
+            list-style-type: none;
+        }
+        
+        ul.bulleted li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+        }
+
+        ul.bulleted li::before {
+            content: "•";
+            color: var(--secondary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #eee;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            header {
+                padding: 20px;
+            }
+            .entry-header {
+                flex-direction: column;
+            }
+            .contact-info {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="profile-img-placeholder">PHOTO</div>
+        
+        <h1>Ashwel Rudolf Fernandes</h1>
+        <p>AI & Machine Learning Engineering Student</p>
+        
+        <div class="contact-info">
+            <span>Mangaluru, Karnataka</span> |
+            <a href="mailto:harryjoannes96@gmail.com">harryjoannes96@gmail.com</a> |
+            <span>+91 [Your Phone Number]</span>
+            <br>
+            <a href="#">LinkedIn Profile</a> | <a href="#">GitHub Profile</a>
+        </div>
+    </header>
+
+    <div class="main-content">
+        
+        <section class="objective">
+            <h2>Objective</h2>
+            <p>
+                Dedicated and analytical AI & Machine Learning Engineering student with a strong foundation in C, C++, and Python. Eager to apply problem-solving skills and technical knowledge through a summer internship. Committed to leveraging volunteering experience and a disciplined athletic background to contribute to team-driven projects.
+            </p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">St. Aloysius University (Deemed to be University)</span>
+                    <span class="entry-date">2024 - Present</span>
+                </div>
+                <span class="entry-subtitle">B.Tech in Artificial Intelligence & Machine Learning</span>
+                <p>GPA: [Insert Current SGPA/CGPA]</p>
+                <p><em>Relevant Coursework:</em> C Programming, Data Structures (Intro), Engineering Mathematics, Python (In-Progress).</p>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">St. Claret Pre University College, Bangalore</span>
+                    <span class="entry-date">2022 - 2024</span>
+                </div>
+                <span class="entry-subtitle">Pre-University Course (PCMC)</span>
+                <p>Score: 81%</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="tags">
+                        <span>C (Proficient)</span>
+                        <span>C++ (Foundational)</span>
+                        <span>Python (In-Progress)</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Software & Tools</h3>
+                    <div class="tags">
+                        <span>Microsoft Excel (Advanced)</span>
+                        <span>VS Code</span>
+                        <span>Basic Command Line</span>
+                    </div>
+                </div>
+                
